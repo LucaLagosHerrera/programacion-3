@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio N°1 - Actividad Practica N°1</title>
+  </head>
+  <body>
+    <script>
+      var fechaActual = new Date();
+      var dia;
+      var mes;
+      var numDia = fechaActual.getDay() + 1;
+      var numMes = fechaActual.getMonth() + 1;
+      var diaMes = fechaActual.getDate();
+      var year = fechaActual.getFullYear();
+      var hora = fechaActual.getHours();
+      var min = fechaActual.getMinutes();
+      var salida;
+      switch (numDia) {
+        case 1:
+          dia = "Domingo";
+          break;
+        case 2:
+          dia = "Lunes";
+          break;
+        case 3:
+          dia = "Martes";
+          break;
+        case 4:
+          dia = "Miercoles";
+          break;
+        case 5:
+          dia = "Jueves";
+          break;
+        case 6:
+          dia = "Viernes";
+          break;
+        case 7:
+          dia = "Sabado";
+          break;
+      }
+      switch (numMes) {
+        case 1:
+          mes = "Enero";
+          break;
+        case 2:
+          mes = "Febrero";
+          break;
+        case 3:
+          mes = "Marzo";
+          break;
+        case 4:
+          mes = "Abril";
+          break;
+        case 5:
+          mes = "Mayo";
+          break;
+        case 6:
+          mes = "Junio";
+          break;
+        case 7:
+          mes = "Julio";
+          break;
+        case 8:
+          mes = "Agosto";
+          break;
+        case 9:
+          mes = "Septiembre";
+          break;
+        case 10:
+          mes = "Octubre";
+          break;
+        case 11:
+          mes = "Noviembre";
+          break;
+        case 12:
+          mes = "Diciembre";
+          break;
+      }
+      if (min >= 0 && min < 10) {
+        min = "0" + min;
+      }
+      salida =
+        "Hoy es " +
+        dia +
+        ", " +
+        diaMes +
+        " de " +
+        mes +
+        " de " +
+        year +
+        " y son las " +
+        hora +
+        ":" +
+        min +
+        " horas.";
+      document.write("EJERCICIO N°1" + "<br>");
+      document.write("--------------------------------------" + "<br>");
+      document.write(salida);
+    </script>
+  </body>
+</html>

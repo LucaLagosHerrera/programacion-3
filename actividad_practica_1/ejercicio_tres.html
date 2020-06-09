@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio N°3 - Actividad Practica N°1</title>
+  </head>
+  <body>
+    <script>
+      var fecha = new Date();
+      var dia = fecha.getDate();
+      var mes = fecha.getMonth() + 1;
+      var year = fecha.getFullYear();
+      var primerFecha = new Date(year, mes, dia);
+      var segundaFecha = new Date(2020, 12, 31);
+      var valorDia = 24 * 60 * 60 * 1000;
+      var difeDias = Math.round(
+        Math.abs((primerFecha.getTime() - segundaFecha.getTime()) / valorDia) -
+          1
+      );
+      document.write("EJERCICIO N°3" + "<br>");
+      document.write("--------------------------------------" + "<br>");
+      document.write(
+        "Los dias de diferencia entre " +
+          dia +
+          "/" +
+          mes +
+          "/" +
+          year +
+          " y " +
+          "31/12/2020 son: " +
+          difeDias +
+          "."
+      );
+    </script>
+  </body>
+</html>
