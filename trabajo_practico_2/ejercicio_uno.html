@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio N°1 - Trabajo Practico N°2</title>
+</head>
+
+<body>
+    <script>
+        /* Creacion de array "clasificacion" */
+        var clasificacion;
+        clasificacion = ["Ana", "Osvaldo", "Raul", "Celia", "Maria", "Antonio"];
+
+        /* Impresion de Clasificacion Actual */
+        document.write(".CLASIFICACION ACTUAL" + "<br>");
+        document.write("Posicion N°1: " + clasificacion[0] + "<br>");
+        document.write("Posicion N°2: " + clasificacion[1] + "<br>");
+        document.write("Posicion N°3: " + clasificacion[2] + "<br>");
+        document.write("Posicion N°4: " + clasificacion[3] + "<br>");
+        document.write("Posicion N°5: " + clasificacion[4] + "<br>");
+        document.write("Posicion N°6: " + clasificacion[5] + "<br>");
+        document.write("<br>");
+
+        /* Celia adelanta a Raul */
+        clasificacion[2] = "Celia";
+        clasificacion[3] = "Raúl";
+
+        /* Se elimina a Antonio que ha sido descalificado, 
+        a traves del metodo "pop" (elimina el ultimo valor de un array) */
+        clasificacion.pop();
+
+        /* Se insertan los nuevos concursantes entre Ana y Osvaldo,
+        a traves del metodo "splice" (permite insertar, eliminar o modificar valores dentro de un array)*/
+        clasificacion.splice(1, 0, "Roberto", "Amaya");
+
+        /* Se inserta a Marta como primer valor en el array,
+        a traves del metodo "unshift" (permite instertar valores al principio de un array)  */
+        clasificacion.unshift("Marta");
+
+        /* Impresion de Clasificacion Actualizada */
+        document.write(".ACTUALIZACION DE CLASIFICACION" + "<br>");
+        document.write("Posicion N°1: " + clasificacion[0] + "<br>");
+        document.write("Posicion N°2: " + clasificacion[1] + "<br>");
+        document.write("Posicion N°3: " + clasificacion[2] + "<br>");
+        document.write("Posicion N°4: " + clasificacion[3] + "<br>");
+        document.write("Posicion N°5: " + clasificacion[4] + "<br>");
+        document.write("Posicion N°6: " + clasificacion[5] + "<br>");
+        document.write("Posicion N°7: " + clasificacion[6] + "<br>");
+        document.write("Posicion N°8: " + clasificacion[7] + "<br>");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio N°2 - Trabajo Practico N°2</title>
+</head>
+
+<body>
+    <script>
+        /* Creacion de array "semana" (que en realidad es "Dias", pero se cambio el nombre por uno singular) */
+        var semana;
+        semana = ["Jueves", "Sabado", "Miercoles", "Lunes", "Viernes", "Martes", "Domingo"];
+
+        /* Impresion de Dias de la Semana */
+        document.write(".DIAS DE LA SEMANA" + "<br>");
+        document.write("* " + semana[0] + "<br>");
+        document.write("* " + semana[1] + "<br>");
+        document.write("* " + semana[2] + "<br>");
+        document.write("* " + semana[3] + "<br>");
+        document.write("* " + semana[4] + "<br>");
+        document.write("* " + semana[5] + "<br>");
+        document.write("* " + semana[6] + "<br>");
+        document.write("<br>");
+
+        /* Se ordena el array de forma alfabetica y ascendente,
+        a traves del metodo "sort" (permite justamente ordenar de forma alfabetica y ascendente un array,
+        siempre que no se especifique ninguna funcion dentro de este) */
+        semana.sort();
+
+        /* Impresion de Dias de la Semana actualizado */
+        document.write(".ACTUALIZACION DE DIAS DE LA SEMANA" + "<br>");
+        document.write("* " + semana[0] + "<br>");
+        document.write("* " + semana[1] + "<br>");
+        document.write("* " + semana[2] + "<br>");
+        document.write("* " + semana[3] + "<br>");
+        document.write("* " + semana[4] + "<br>");
+        document.write("* " + semana[5] + "<br>");
+        document.write("* " + semana[6] + "<br>");
+    </script>
+</body>
+
+</html>

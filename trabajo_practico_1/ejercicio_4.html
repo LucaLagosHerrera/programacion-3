@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio N°4 - Trabajo Practico N°1</title>
+</head>
+<body>
+    <script>
+      do{
+        var num = prompt("Por favor ingrese un numero: ");
+        if(Number(num) == num){
+            if(num>0 && num<=50){
+                var num_repetido, i;
+                for(i=0;i<=num;i++){
+                    for(num_repetido=1;num_repetido<=i;num_repetido++){
+                    document.write(num_repetido);
+                }
+                    document.write("<br>");
+                }
+                break;    
+            }else{
+                alert("El numero es erroneo, por favor ingrese un numero correcto.");   
+            }
+        }else if(num != undefined){
+            alert("Por favor, ingrese un numero.");   
+         }
+      }while(num != undefined);
+        
+    </script>
+</body>
+</html>

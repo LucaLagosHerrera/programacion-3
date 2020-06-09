@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio N°1 - Trabajo Practico N°1</title>
+</head>
+<body>
+    <script>    
+      do{
+        var nota = prompt("Por favor, introduzca su nota: ");
+        if(Number(nota) == nota){
+        if(nota >= 0 && nota <= 9){
+            if(nota <= 3){
+                alert("La nota es muy deficiente.");
+            }else if(nota <= 5){
+                alert("La nota es insuficiente.");
+            }else if(nota <= 6){
+                alert("La nota es suficiente.");
+            }else if(nota <= 7){
+                alert("La nota esta bien.");
+            }else if(nota <= 9){
+                alert("La nota es notable.");
+            }
+        }else if (nota>9 || nota<0){
+            alert("La nota es erronea, por favor escriba una nota valida.");
+         }
+        }else if(nota != undefined){
+            alert("Por favor, ingrese un numero.");
+        }else if(nota.length == 0){
+            alert("Por favor, ingrese un numero.");
+        }
+      }while(nota != undefined);
+    </script>
+</body>
+</html>

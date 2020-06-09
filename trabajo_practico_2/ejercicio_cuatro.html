@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio N°4 - Trabajo Practico N°2</title>
+</head>
+
+<body>
+    <script>
+        /* Creacion de arrays "aNombre", "aNombre0" y "aNombre2" */
+        var aNombre, aNombre0, aNombre2;
+        aNombre = ["Pepe", "Alfredo", "Alberto", "Carmen", "Maria", "Teresa"];
+
+        /* Extraemos los valores desde Alfredo hasta Carmen, 
+        a traves del metodo "slice" (permite extraer valores de un array especificando,
+        desde donde empieza hasta donde termina sin contar el ultimo valor, 
+        y sin modificar el array utilizado) */
+        aNombre2 = aNombre.slice(1, 4);
+
+        /* Se extrae el valor "Alberto" (esta vez modificando el array utilizado), 
+        a traves del metodo "splice" (lo que deja al array "aNombre2" solo con los valores "Alfredo" y "Carmen") */
+        aNombre0 = aNombre2.splice(1, 1);
+
+        /* Impresion de Primera Lista de Nombres */
+        document.write(".LISTA DE NOMBRES DE 'aNombre'" + "<br>");
+        document.write("* " + aNombre[0] + "<br>");
+        document.write("* " + aNombre[1] + "<br>");
+        document.write("* " + aNombre[2] + "<br>");
+        document.write("* " + aNombre[3] + "<br>");
+        document.write("* " + aNombre[4] + "<br>");
+        document.write("* " + aNombre[5] + "<br>");
+        document.write("<br>");
+
+        /* Impresion de Segunda Lista de Nombres */
+        document.write(".LISTA DE NOMBRES DE 'aNombre2'" + "<br>");
+        document.write("* " + aNombre2[0] + "<br>");
+        document.write("* " + aNombre2[1] + "<br>");
+    </script>
+</body>
+
+</html>
